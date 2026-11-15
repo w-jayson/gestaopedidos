@@ -23,3 +23,6 @@ dist-ssr/
 .DS_Store
 Thumbs.db
 *.log
+
+# Enunciado local
+teste.md

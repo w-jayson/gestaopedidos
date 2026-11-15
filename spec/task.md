@@ -15,10 +15,10 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 1 — Banco de Dados SQL Server (`database/`)
 
-- [ ] **1.1** Criar `database/01_schema.sql` de forma idempotente com as tabelas `Clientes`, `Produtos`, `Pedidos` e `ItensPedido`, PKs, FKs e `CHECK` constraints.
-- [ ] **1.2** Adicionar no `01_schema.sql` os índices planejados (`UX_Clientes_Email`, `IX_Pedidos_DataPedido_ClienteId`, `IX_ItensPedido_PedidoId INCLUDE (Quantidade, PrecoUnitario)`, `IX_ItensPedido_ProdutoId`).
-- [ ] **1.3** Criar `database/02_seed.sql` de forma idempotente com clientes (mais de 5, incluindo cliente sem pedidos), produtos (incluindo item com estoque baixo para testes) e pedidos distribuídos em **2026** e em anos anteriores.
-- [ ] **1.4** Commit da fase (`feat(database): add sql server schema, indexes and seed scripts`).
+- [x] **1.1** Criar `database/01_schema.sql` de forma idempotente com as tabelas `Clientes`, `Produtos`, `Pedidos` e `ItensPedido`, PKs, FKs e `CHECK` constraints.
+- [x] **1.2** Adicionar no `01_schema.sql` os índices planejados (`UX_Clientes_Email`, `IX_Pedidos_DataPedido_ClienteId`, `IX_ItensPedido_PedidoId INCLUDE (Quantidade, PrecoUnitario)`, `IX_ItensPedido_ProdutoId`).
+- [x] **1.3** Criar `database/02_seed.sql` de forma idempotente com clientes (mais de 5, incluindo cliente sem pedidos), produtos (incluindo item com estoque baixo para testes) e pedidos distribuídos em **2026** e em anos anteriores.
+- [x] **1.4** Commit da fase (`feat(database): add sql server schema, indexes and seed scripts`).
 
 ---
 
