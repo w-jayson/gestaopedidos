@@ -36,14 +36,14 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 3 — Camada Infrastructure (`EF Core` + `Dapper`)
 
-- [ ] **3.1** Configurar `AppDbContext` (EF Core) mapeando explicitamente entidades e propriedades em inglês para as tabelas e colunas em português (`Clientes`, `Produtos`, `Pedidos`, `ItensPedido`).
-- [ ] **3.2** Implementar `OrderCommandRepository` com transação explícita: validar cliente, buscar produtos, consolidar/checar estoque, decrementar estoque atomicamente (`Estoque >= Quantidade`), gravar `PrecoUnitario` do catálogo e `ValorTotal` calculado no servidor.
-- [ ] **3.3** Implementar `SqlConnectionFactory` para criação de conexões SQL Server usadas pelo Dapper.
-- [ ] **3.4** Implementar `OrderReadRepository` (Dapper):
+- [x] **3.1** Configurar `AppDbContext` (EF Core) mapeando explicitamente entidades e propriedades em inglês para as tabelas e colunas em português (`Clientes`, `Produtos`, `Pedidos`, `ItensPedido`).
+- [x] **3.2** Implementar `OrderCommandRepository` com transação explícita: validar cliente, buscar produtos, consolidar/checar estoque, decrementar estoque atomicamente (`Estoque >= Quantidade`), gravar `PrecoUnitario` do catálogo e `ValorTotal` calculado no servidor.
+- [x] **3.3** Implementar `SqlConnectionFactory` para criação de conexões SQL Server usadas pelo Dapper.
+- [x] **3.4** Implementar `OrderReadRepository` (Dapper):
   - `GET /pedidos`: filtros sargáveis (`DataPedido >= @StartDate AND DataPedido < @EndDateExclusive`), `OFFSET/FETCH` + `COUNT(*)` e carga de itens sem N+1.
   - `GET /relatorios/top-clientes`: query corrigida (`TOP 5`, `INNER JOIN`, filtro sargável, `GROUP BY c.Id, c.Nome`, `ORDER BY TotalAmount DESC`).
-- [ ] **3.5** Implementar `CatalogReadRepository` (Dapper) para listar clientes (`GET /clientes`) e produtos (`GET /produtos`) ordenados por nome.
-- [ ] **3.6** Executar `dotnet build` e realizar commit (`feat(infrastructure): implement ef core transactional writes and dapper queries`).
+- [x] **3.5** Implementar `CatalogReadRepository` (Dapper) para listar clientes (`GET /clientes`) e produtos (`GET /produtos`) ordenados por nome.
+- [x] **3.6** Executar `dotnet build` e realizar commit (`feat(infrastructure): implement ef core transactional writes and dapper queries`).
 
 ---
 
