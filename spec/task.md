@@ -49,12 +49,12 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 4 — Camada API (`.NET 10`)
 
-- [ ] **4.1** Implementar `GlobalExceptionHandler` (`IExceptionHandler`) convertendo exceções de negócio (`400`, `404`, `409`) para `ProblemDetails (RFC 7807)`.
-- [ ] **4.2** Configurar `Program.cs` com injeção de dependência, `AddProblemDetails()`, OpenAPI + **Scalar**, endpoint `/health` e `public partial class Program`.
-- [ ] **4.3** Implementar `OrdersController` (`POST /pedidos`, `GET /pedidos`).
-- [ ] **4.4** Implementar `ReportsController` (`GET /relatorios/top-clientes`), `CustomersController` (`GET /clientes`) e `ProductsController` (`GET /produtos`).
-- [ ] **4.5** Validar `dotnet build` e verificar o contrato OpenAPI/Scalar.
-- [ ] **4.6** Realizar commit (`feat(api): add controllers, problem details handler and scalar docs`).
+- [x] **4.1** Implementar `GlobalExceptionHandler` (`IExceptionHandler`) convertendo exceções de negócio (`400`, `404`, `409`) para `ProblemDetails (RFC 7807)`.
+- [x] **4.2** Configurar `Program.cs` com injeção de dependência, `AddProblemDetails()`, OpenAPI + **Scalar**, endpoint `/health` e `public partial class Program`.
+- [x] **4.3** Implementar `OrdersController` (`POST /pedidos`, `GET /pedidos`).
+- [x] **4.4** Implementar `ReportsController` (`GET /relatorios/top-clientes`), `CustomersController` (`GET /clientes`) e `ProductsController` (`GET /produtos`).
+- [x] **4.5** Validar `dotnet build` e verificar o contrato OpenAPI/Scalar.
+- [x] **4.6** Realizar commit (`feat(api): add controllers, problem details handler and scalar docs`).
 
 ---
 
