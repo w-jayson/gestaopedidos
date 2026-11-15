@@ -60,13 +60,13 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 5 — Testes Automatizados (`UnitTests` e `IntegrationTests`)
 
-- [ ] **5.1** Criar testes unitários de criação válida e consolidação de produto duplicado em `OrderManagement.UnitTests`.
-- [ ] **5.2** Criar testes unitários de validação/erro (cliente inexistente, produto inexistente, lista vazia/nula, quantidade `<= 0`, estoque insuficiente e período inválido).
-- [ ] **5.3** Configurar `SqlServerTestFixture` em `OrderManagement.IntegrationTests` com `Testcontainers.MsSql` executando `01_schema.sql` e `02_seed.sql`, integrado ao `WebApplicationFactory<Program>`.
-- [ ] **5.4** Criar testes de integração para `POST /pedidos` (`201`, `400`, `404`, `409` garantindo rollback de estoque).
-- [ ] **5.5** Criar testes de integração para `GET /pedidos`, `GET /relatorios/top-clientes`, `GET /clientes` e `GET /produtos`.
-- [ ] **5.6** Executar `dotnet test` e confirmar aprovação de 100% dos testes unitários e de integração.
-- [ ] **5.7** Realizar commit (`test(backend): add unit and testcontainers integration tests`).
+- [x] **5.1** Criar testes unitários de criação válida e consolidação de produto duplicado em `OrderManagement.UnitTests`.
+- [x] **5.2** Criar testes unitários de validação/erro (cliente inexistente, produto inexistente, lista vazia/nula, quantidade `<= 0`, estoque insuficiente e período inválido).
+- [x] **5.3** Configurar `SqlServerTestFixture` em `OrderManagement.IntegrationTests` com `Testcontainers.MsSql` executando `01_schema.sql` e `02_seed.sql`, integrado ao `WebApplicationFactory<Program>`.
+- [x] **5.4** Criar testes de integração para `POST /pedidos` (`201`, `400`, `404`, `409` garantindo rollback de estoque).
+- [x] **5.5** Criar testes de integração para `GET /pedidos`, `GET /relatorios/top-clientes`, `GET /clientes` e `GET /produtos`.
+- [x] **5.6** Executar `dotnet test` e confirmar aprovação de 100% dos testes unitários e de integração.
+- [x] **5.7** Realizar commit (`test(backend): add unit and testcontainers integration tests`).
 
 ---
 
