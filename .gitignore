@@ -24,5 +24,6 @@ dist-ssr/
 Thumbs.db
 *.log
 
-# Enunciado local
+# Enunciado local e guia de estudo
 teste.md
+spec/passo-a-passo.md

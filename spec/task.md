@@ -24,13 +24,13 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 2 — Solution, Domain e Application (`backend/`)
 
-- [ ] **2.1** Criar `backend/OrderManagement.sln` e os 6 projetos `.NET 10` (`Domain`, `Application`, `Infrastructure`, `API`, `UnitTests` e `IntegrationTests` com xUnit).
-- [ ] **2.2** Criar as entidades de domínio em `OrderManagement.Domain` (`Customer`, `Product`, `Order`, `OrderItem`) com identificadores em inglês e comentários de tradução/explicação em português.
-- [ ] **2.3** Criar as exceções de negócio em `OrderManagement.Domain` (`ValidationException`, `ResourceNotFoundException`, `InsufficientStockException`).
-- [ ] **2.4** Criar os DTOs de entrada/saída em `OrderManagement.Application` (`CreateOrderRequest`, `OrderResponse`, `PagedResponse<T>`, `TopCustomerResponse`, `CustomerResponse`, `ProductResponse`, filtros).
-- [ ] **2.5** Criar as interfaces de repositório (`IOrderCommandRepository`, `IOrderReadRepository`, `ICatalogReadRepository`) em `OrderManagement.Application`.
-- [ ] **2.6** Implementar `OrderService` em `OrderManagement.Application` (validação de pedido sem itens, quantidade `<= 0`, consolidação de produto repetido e validação de período `startDate > endDate`).
-- [ ] **2.7** Executar `dotnet build` e realizar commit (`feat(backend): create solution structure, domain entities and application layer`).
+- [x] **2.1** Criar `backend/OrderManagement.sln` e os 6 projetos `.NET 10` (`Domain`, `Application`, `Infrastructure`, `API`, `UnitTests` e `IntegrationTests` com xUnit).
+- [x] **2.2** Criar as entidades de domínio em `OrderManagement.Domain` (`Customer`, `Product`, `Order`, `OrderItem`) com identificadores em inglês e comentários de tradução/explicação em português.
+- [x] **2.3** Criar as exceções de negócio em `OrderManagement.Domain` (`ValidationException`, `ResourceNotFoundException`, `InsufficientStockException`).
+- [x] **2.4** Criar os DTOs de entrada/saída em `OrderManagement.Application` (`CreateOrderRequest`, `OrderResponse`, `PagedResponse<T>`, `TopCustomerResponse`, `CustomerResponse`, `ProductResponse`, filtros).
+- [x] **2.5** Criar as interfaces de repositório (`IOrderCommandRepository`, `IOrderReadRepository`, `ICatalogReadRepository`) em `OrderManagement.Application`.
+- [x] **2.6** Implementar `OrderService` em `OrderManagement.Application` (validação de pedido sem itens, quantidade `<= 0`, consolidação de produto repetido e validação de período `startDate > endDate`).
+- [x] **2.7** Executar `dotnet build` e realizar commit (`feat(backend): create solution structure, domain entities and application layer`).
 
 ---
 
