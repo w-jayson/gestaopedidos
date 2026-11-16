@@ -72,16 +72,16 @@ Checklist sequencial e verificável para implementar a aplicação seguindo a [c
 
 ## Fase 6 — Frontend Minimalista (`frontend/`)
 
-- [ ] **6.1** Inicializar projeto `Vite + React + TypeScript` em `frontend/` sem bibliotecas pesadas extras e configurar proxy `/api` em `vite.config.ts`.
-- [ ] **6.2** Criar `src/types/api.ts` com as interfaces TypeScript alinhadas aos contratos da API e comentários em português.
-- [ ] **6.3** Criar `src/api/client.ts` com funções `fetch` nativas e tratamento de `ProblemDetails` explicado linha a linha.
-- [ ] **6.4** Criar `src/components/TopCustomersCard.tsx` (card de Top 5 clientes com filtro de datas e comentários didáticos).
-- [ ] **6.5** Criar `src/components/OrdersFilterBar.tsx` (filtros por cliente e período + botão limpar, com comentários didáticos).
-- [ ] **6.6** Criar `src/components/OrdersList.tsx` (tabela de pedidos com resumo dos itens e paginação Anterior/Próxima, com comentários didáticos).
-- [ ] **6.7** Criar `src/components/CreateOrderModal.tsx` (modal de criação de pedido com seleção de cliente, itens dinâmicos, prévia do total e exibição de erros, com comentários didáticos).
-- [ ] **6.8** Montar `src/App.tsx` e `src/App.css` integrando todos os componentes e recarregamento automático após criar pedido.
-- [ ] **6.9** Executar `npm run build` em `frontend/` para validar tipagem TypeScript e bundle de produção.
-- [ ] **6.10** Realizar commit (`feat(frontend): add minimal react typescript interface with didactic comments`).
+- [x] **6.1** Inicializar projeto `Vite + React + TypeScript` em `frontend/` sem bibliotecas pesadas extras e configurar proxy `/api` em `vite.config.ts`.
+- [x] **6.2** Criar `src/types/api.ts` com as interfaces TypeScript alinhadas aos contratos da API e comentários em português.
+- [x] **6.3** Criar `src/api/client.ts` com funções `fetch` nativas e tratamento de `ProblemDetails` explicado linha a linha.
+- [x] **6.4** Criar `src/components/TopCustomersCard.tsx` (card de Top 5 clientes com filtro de datas e comentários didáticos).
+- [x] **6.5** Criar `src/components/OrdersFilterBar.tsx` (filtros por cliente e período + botão limpar, com comentários didáticos).
+- [x] **6.6** Criar `src/components/OrdersList.tsx` (tabela de pedidos com resumo dos itens e paginação Anterior/Próxima, com comentários didáticos).
+- [x] **6.7** Criar `src/components/CreateOrderModal.tsx` (modal de criação de pedido com seleção de cliente, itens dinâmicos, prévia do total e exibição de erros, com comentários didáticos).
+- [x] **6.8** Montar `src/App.tsx` e `src/App.css` integrando todos os componentes e recarregamento automático após criar pedido.
+- [x] **6.9** Executar `npm run build` em `frontend/` para validar tipagem TypeScript e bundle de produção.
+- [x] **6.10** Realizar commit (`feat(frontend): add minimal react typescript interface with didactic comments`).
 
 ---
 
